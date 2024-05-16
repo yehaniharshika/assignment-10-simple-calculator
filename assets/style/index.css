@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/images/cal04.jpg");
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.calculator{
+    background: linear-gradient(to right,black,gray);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    background: #1b2f38;
+    font-size: 21px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+}
+
+.calculator form input:hover {
+    transform: scale(1.1);
+}
+
+
+form .display-field{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display-field input{
+    text-align: right;
+    background: transparent;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal-btn{
+    width: 145px;
+    background:  #72beff;
+}
+
+form input.equal-btn:hover{
+    box-shadow: 0 0 15px 2px #72beff;
+}
+
+form input.operator-button-01{
+    color: #00ffd0;
+    background-color: #00ffd021;
+    box-shadow: none;
+}
+form input.operator-button-01:hover{
+    box-shadow: -8px -8px 15px rgba(0, 255, 208, 0.377), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+form input.operator-button-02{
+    color: #72beff;
+    background-color:  #041d33;
+    box-shadow: none;
+}
+form input.operator-button-02:hover{
+    box-shadow: 0 0 15px 2px #72beff;
+}
