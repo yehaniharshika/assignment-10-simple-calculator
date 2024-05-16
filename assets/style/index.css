@@ -9,7 +9,7 @@
 .container {
     width: 100%;
     height: 100vh;
-    background-image: url("../images/cal03.jpg");
+    background-image: url("../images/background.jpg");
     background-size: cover;
     display: flex;
     align-items: center;
@@ -29,12 +29,12 @@
     background: rgba(0, 0, 0, 0.596);
 }
 
-
 .calculator{
     background: linear-gradient(to right,black,gray);
     padding: 20px;
     border-radius: 10px;
     z-index: 100;
+    box-shadow: 0 0 15px black;
 }
 
 .calculator form input{
@@ -51,25 +51,28 @@
     color: white;
 }
 
+/*all calculator button hover style*/
 .calculator form input:hover {
     transform: scale(1.1);
 }
 
-
-form .display-field{
+/* dark theme calculator */
+.calculator form .display-field{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
 }
 
-form .display-field input{
+.calculator form .display-field input{
     text-align: right;
     background: transparent;
     flex: 1;
     font-size: 45px;
     box-shadow: none;
+    color: white;
 }
 
+/*equal button style*/
 form input.equal-btn{
     width: 145px;
     background:  #72beff;
@@ -79,20 +82,26 @@ form input.equal-btn:hover{
     box-shadow: 0 0 15px 2px #72beff;
 }
 
-form input.operator-button-01{
+/*dark theme operator button*/
+.calculator form input.operator-button-01{
     color: #00ffd0;
     background-color: #00ffd021;
     box-shadow: none;
 }
-form input.operator-button-01:hover{
-    box-shadow: -8px -8px 15px rgba(0, 255, 208, 0.377), 5px 5px 15px rgba(0, 0, 0, 0.2);
+
+.calculator form input.operator-button-01:hover{
+    box-shadow: 0 0 15px 2px #00ffd021;
 }
 
+
+/*light,dark operator button 02*/
 form input.operator-button-02{
-    color: #72beff;
-    background-color:  #041d33;
+    color: #d345bc;
+    background-color:  #541c4b;
     box-shadow: none;
+    font-size: 25px;
 }
+
 form input.operator-button-02:hover{
-    box-shadow: 0 0 15px 2px #72beff;
+    box-shadow: 0 0 15px 2px #541c4b;
 }
