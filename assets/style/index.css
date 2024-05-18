@@ -105,3 +105,14 @@ form input.operator-button-02{
 form input.operator-button-02:hover{
     box-shadow: 0 0 15px 2px #541c4b;
 }
+
+.footer{
+    color: white;
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+}
+
+.footer a{
+    color: white;
+}
